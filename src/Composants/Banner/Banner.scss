@@ -1,0 +1,23 @@
+@import '/src/style/setting.scss';
+.banner{
+    p{
+        color: white;
+        font-size: 48px;
+        font-weight: 700;
+        font-style: 'Montserrat';
+        text-align: center;
+        filter: $DropShadow;
+    } 
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('src/assets/images/bannerHome.png');
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    filter: $DropShadow
+    
+}
