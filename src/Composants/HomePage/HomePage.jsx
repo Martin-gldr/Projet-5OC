@@ -3,20 +3,21 @@ import Header from '../Header/Header'
 import Banner from '../Banner/Banner'
 import Footer from '../Footer/Footer'
 import CardBoard from '../CardBoard/CardBoard'
+import src from '../../assets/images/bannerHome.png'
 function HomePage() {
   return (
 
     <>
-      <header>
-        <Header />
-      </header>
+
+      <Header />
+
       <main>
-        <Banner />
+        <Banner content="Chez vous, partout et ailleurs" className="banner" src={src}/>
         <CardBoard />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+
+      <Footer />
+
     </>
   )
 }
