@@ -1,10 +1,15 @@
+import { NavLink } from 'react-router'
 import './Card.scss'
-function Card() {
+function Card(props) {
+    const title = props.title
+    const src = props.src
+    const id = props.id
+
     return(
-        <figure className='card'>
-            <img src="./src/assets/images/bannerHome.png" alt="" />
-            <h2>Titre de la loc</h2>
-        </figure>
+        <NavLink className='card' to={`/FicheLogement/${id}`}>
+            <img src={src} alt={title} />
+            <h2>{title}</h2>
+        </NavLink>
     )
 }
 export default Card
