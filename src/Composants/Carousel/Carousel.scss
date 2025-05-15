@@ -1,0 +1,56 @@
+.image-view-box{
+   position: relative;
+   height: 80vh;
+   
+   
+   overflow: hidden;
+   border-radius: 20px;
+}
+.carousel {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    transition: transform;
+    transition-duration: 1s;
+   
+    img{
+        object-fit: cover ;
+        max-width: none;
+        width: 100%;
+        flex-shrink: 0;
+        height: auto;
+    }
+   
+
+    
+}
+
+.carousel-next{
+    padding: 10px;
+    position: absolute;
+    z-index: 0;
+    top:48%;
+    right: 30px;
+    border: none;
+    background: none;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    :hover{
+        background-color: black;
+    }
+
+}
+.carousel-prev{
+    z-index: 1;
+    padding: 10px;
+    position: absolute;
+    left: 30px;
+    top:48%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transform: rotate(90deg);
+    :hover{
+        background-color: black;
+    }
+}
