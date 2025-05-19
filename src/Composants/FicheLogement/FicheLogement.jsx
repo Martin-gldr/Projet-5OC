@@ -13,9 +13,7 @@ function FicheLogement() {
   const tags = logement.tags
   const equipments = logement.equipments
   const pictures = logement.pictures
-
-
-
+  
   return (
     <>
       <Header />
