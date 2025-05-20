@@ -1,15 +1,23 @@
 .card-board{
-   display: flex;
-   flex-wrap: wrap;
-   gap:30px;
-   margin:0%;
-   justify-content: center;
-   padding: 30px;
+    box-sizing: border-box;
    background-color: #F6F6F6;
    border-radius: 25px;
    margin-top: 20px;
    margin-bottom: 20px;
+   width: 100%;
+   
+   
 }
+.card-grid{ 
+
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   max-width: 1240px;
+   column-gap:3rem;
+   padding: 3rem 3rem 0 3rem;
+}
+
 figure{
     margin: 0%;
 }
+

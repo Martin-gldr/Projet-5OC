@@ -5,6 +5,9 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Collapse from '../Collapse/Collapse'
 import Carousel from "../Carousel/Carousel";
+import Rating from "../Rating/Rating";
+
+
 
 function FicheLogement() {
   const id = useParams()
@@ -35,15 +38,12 @@ function FicheLogement() {
             <img src={logement.host.picture} />
           </div>
 
-
-          <div className="rating">
-            {logement.rating}
-          </div>
-          </div>
+          <Rating nbStar = {logement.rating}/>
+        </div>
         </div>
         <div className="current-collapse" >
           <Collapse content="Description" description={logement.description} />
-          <Collapse content="Equipement" description={equipments.map((equipment) => (<span className="equipement" key={equipment}>{equipment}</span>))} />
+          <Collapse content="Équipement" description={equipments.map((equipment) => (<span className="equipement" key={equipment}>{equipment}</span>))} />
         </div>
      </main>
 
