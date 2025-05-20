@@ -1,7 +1,7 @@
 .image-view-box{
    position: relative;
-   height: 80vh;
-   
+   height: 415px;
+   width: 100%;
    
    overflow: hidden;
    border-radius: 20px;
@@ -32,15 +32,15 @@
 .carousel-next{
     padding: 10px;
     position: absolute;
-    z-index: 0;
-    top:48%;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
     right: 30px;
     border: none;
     background: none;
-    transform: rotate(-90deg);
     cursor: pointer;
     :hover{
-        background-color: black;
+        transform: scale(120%);
     }
 
 }
@@ -49,12 +49,26 @@
     padding: 10px;
     position: absolute;
     left: 30px;
-    top:48%;
+    top:50%;
+   
     border: none;
     background: transparent;
     cursor: pointer;
-    transform: rotate(90deg);
+    transform: rotate(180deg) translateY(50%) ;
     :hover{
-        background-color: black;
+        transform: scale(120%);
     }
+}
+.counter{
+    position: absolute;
+    z-index: 1;
+    bottom: 15px;
+    color: #FFF;
+    left: 50%;
+    transform: translateX(50%);
+    font-size: 18px;
+    font-weight: 500;
+}
+.hide{
+    display: none;
 }
