@@ -1,0 +1,140 @@
+.equipement{
+    display: block
+}
+.current-collapse{
+    
+    display: grid;
+    grid-template-columns: 48.5% 48.5%;
+    
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .collapse{
+        h2{
+            font-size: 18px;
+            font-weight:700 ;
+        }
+        
+        
+    }
+   
+}
+.fiche-logement{
+    position: relative;
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
+    h1{
+        margin: 0;
+        font-size: 36px;
+        color: #ff6060;
+        font-weight: 500;
+        padding: 0%;
+    }
+    h2{
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 0%;
+
+    }
+
+    
+}
+.host{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: end;
+    img{
+        border-radius: 200px;
+        width: 64px;
+        height: 64px;
+    }
+    p{
+        font-size: 18px;
+        font-weight:500 ;
+        color: #ff6060;
+        width: 40%;
+        text-align: end;
+    }
+}
+.tags{
+   display: flex;
+   gap: 10px;
+   margin-top: 20px;
+
+   .tag{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #ff6060;
+    border-radius: 10px;
+    padding: 0px 25px;
+   }
+}
+
+.organisation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+@media(max-width:767px){
+    .current-collapse{
+        display: block;
+        .collapse{
+            h2{
+                font-size: 13px;
+            }
+            
+        }
+        
+
+    }
+    .organisation{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .host-rating{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+
+    }
+    .tags{
+        .tag{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    }
+    .titles{
+        h1{
+            font-size: 18px;
+        }
+        h2{
+            font-size: 14px;
+        }
+    }
+ 
+    .host{
+        gap: 5px;
+        img{
+            width: 32px;
+            height: 32px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    
+    
+}

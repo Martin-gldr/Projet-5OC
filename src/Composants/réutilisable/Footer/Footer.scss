@@ -1,0 +1,23 @@
+.footer{
+    background-color: black;
+    color: white;
+    padding: 50px;    
+    text-align: center;
+    width: 100%;
+    .phone{
+        display: none;
+    }
+    
+}
+
+@media(max-width:767px){
+    .footer{
+        .desk{
+            display: none;
+        }
+        .phone{
+            display: block;
+            font-size: 12px;
+        }
+    }
+}
